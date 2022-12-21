@@ -38,12 +38,46 @@
 </head>
 
 <body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-body">
+                <h3>使用须知</h3>
+                <ul>
+                    <li>我们提供的服务仅仅是：依据您所查询的条件在互联网中收集到的数据中检索相关内容。</li>
+                    <li>我们不提供：文件的上传、保存，链接的检测与验证。</li>
+                    <li>请注意，所有链接均为程序自动抓取自互联网公开资源，我们对链接内容、安全性、有效性一无所知。请下载时务必验证下载内容与检索信息一致，并使用杀毒软件或沙盒进行处理。</li>
+                </ul>
+                <!-- <h3>免责声明</h3>
+                <ul>
+                    <li>本网站是为交流编程技术而设立。仅供学习交流使用，对数据内容不负任何责任。</li>
+                </ul> -->
+                <h3>侵权内容投诉</h3>
+                删除索引：
+                如果您发现本网站的搜索结果中错误地展示了您具有版权的信息，请联系我们 zhelper@proton.me ，我们会第一时间将相应结果从网站数据库中移除。
+                <br>
+                删除内容：
+                但由于我们只是通过数据收集等方式从互联网公开资源中获取了一些元数据，即使在本网站删除了索引，相应的侵权文件仍然存在于互联网的某一网站。请参照以下内容联系文件传播者删除文件：
+                <ul>
+                    <li>标为 z-library 的数据: 这些数据来自 z-library 和 annas-archive，二者网址分别为：https://singlelogin.me
+                        ，https://annas-archive.org/ 。zhelper v5 网站所使用的相关 cid、md5、文件大小信息从后者获取。zhelper v4 使用的接口通过对前者网站上下载的 app
+                        进行分析后提取（仅供学习交流使用！）。其中，所谓秒传码均为依据数据库中MD5值、文件大小进行推测得到，也未对文件情况进行任何验证。</li>
+                    <li>标为 sslibrary 的数据：这些数据来自于网上流传的所谓秒传书表，本网站所使用的版本来自于 https://forum.freemdict.com/
+                        （相关帖子已删除，我们可以协助提供文本文档，名为“500w电子书.txt”）。请注意，所谓秒传码均为依据数据库中MD5值、文件大小进行推测得到，也未对文件情况进行任何验证。</li>
+                    <li>标为 sanqiu 的数据：链接爬取自三秋书屋： https://www.sanqiu.mobi/</li>
+                    <li>标为 fast8 的数据：链接爬取自fast8： http://fast8.cc/</li>
+                    <li>标为 shuzhou 的数据：链接爬取自书舟： https://www.shuzhou.cc/</li>
+                </ul>
+                请与以上网站负责人联系以删除侵权内容，如您遇到问题，也可以联系我们，我们会尽可能协助，维护您的著作权。
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <div>
         <div class="py-4 text-center align-items-center container ">
-            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                如果 zhelper V5 无法下载，您也可以考虑用回 zhelper V4（V4 目前可以通过替换网址恢复下载），参考 <a href="https://zlib.download/#/?id=%e8%af%a6%e7%bb%86%e5%9b%be%e6%96%87">zlib.download 教程</a> <button type="button" class="btn-close"
-                    data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
             <div class="alert alert-secondary alert-dismissible fade show" role="alert">
                 近期更新：电子书网址导航 <a href="https://nav.yibook.org/">直达</a>，Scihub/Libgen 等镜像收集 <a href="https://mirrors.zhelper.net/">直达</a>。欢迎使用 <button type="button" class="btn-close"
                     data-bs-dismiss="alert" aria-label="Close"></button>
@@ -51,6 +85,10 @@
             <h1>zhelper</h1>
             <h3>v5</h3>
             <p></p>
+            <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                使用须知
+              </button>
+            <br>
             <a href="https://node1.v5.zhelper.net/" class="btn btn-primary position-relative btn-lg my-2">
                 搜索工具
             </a><br>
